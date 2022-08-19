@@ -2,20 +2,18 @@ package org.example;
 
 public class Robot {
     public String name;
-    public String weaponName;
-    public int weaponPower;
+    public Weapon weapon;
 
      //Constructor
-    public Robot() {
+    public Robot(Weapon weapon) {
         this.name = "Fade";
-        this.weaponName = "Butterfly Knife";
-        this.weaponPower = 50;
+        this.weapon = weapon;
 
     }
         //Methods
     public void Attack() {
-        System.out.println(this.name + " attacks with their " + this.weaponName + " for " + this.weaponPower + " damage! ");
-        };
+        System.out.println(this.name + " attacks with their " + this.weapon.name + " for " + this.weapon.power + " damage! ");
+        }
 
 
 
