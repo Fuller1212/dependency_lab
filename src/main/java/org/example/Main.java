@@ -5,10 +5,19 @@ public class Main {
         System.out.println("Hello world!");
 
 
-        Weapon butterfly_knife = new Weapon("Butterfly Knife", 50);
-        Weapon sword = new Weapon("Sword", 30);
-        Robot robotOne = new Robot(sword);
-        System.out.println(robotOne.name);
+        //Weapons
+        Knife knife = new Knife();
+        Bow bow = new Bow();
+        Sword sword = new Sword();
+
+        //Robots
+        Robot robotOne = new Robot(knife, "Postman");
+        Robot robotTwo = new Robot(bow, "React");
+        Robot robotThree = new Robot(sword, "Django");
+
+        // Call Robot Attacks
         robotOne.Attack();
+        robotTwo.Attack();
+        robotThree.Attack();
     }
 }
